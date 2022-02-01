@@ -1,0 +1,3 @@
+while filling loan details 
+the following things we need to maintain
+ we should match the accno and credit no number with aholder table.

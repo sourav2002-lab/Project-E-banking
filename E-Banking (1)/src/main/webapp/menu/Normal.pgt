@@ -1,0 +1,77 @@
+========== Description Part Begin ==========
+Title = Normal
+ProgID = PageletServer.DynamicMenu
+LastUpdateTime = 38066.510532407
+PreviewPath = 
+Description = 
+========== Description Part End ==========
+
+========== Parameter Part Begin ==========
+MenuItem3_0 = 0;Calculator;left;middle;;;-1;-1;0;normal;0;13555414;false;8650752;false;;1;-1;-1;;;-1;-1;0;;;_self;Arial;9;0;normal;normal;none;Arial;9;16777215;normal;normal;none;0;solid;13555414;13555414;13555414;13555414;13555414;13555414;13555414;13555414;0;1;;1;;;tiled;tiled;0;;;;;;;
+MenuItem0_3 = 1;Services;left;middle;;;-1;-1;0;normal;0;11254943;false;14674647;false;;1;-1;-1;;;-1;-1;0;;;_self;Arial;8;0;normal;normal;none;Arial;8;0;normal;normal;none;1;solid;5075021;14674647;5075021;12571056;14674647;5075021;12571056;5075021;0;1;;1;;;tiled;tiled;0;;;;;;;
+MenuItem2_1 = 0;Menu Item 1;left;middle;;;-1;-1;0;sepline;0;0;false;16777215;false;;1;-1;-1;;;-1;-1;0;;;_self;Arial;8;0;normal;normal;none;Arial;8;0;normal;normal;none;1;solid;5075021;16777215;5075021;12571056;16777215;5075021;12571056;5075021;0;1;;1;;;tiled;tiled;0;;;;;;;
+MenuBody0 = 5;auto;0;0;vertically;D:\project\menu\arrow_r.gif;7;7;0;3;16777215;false;;tiled;16777215;0;none;0;Normal;50;true;0;16777215;16777215;16777215;3;10201731;0;complex;;;;;;;;;;;
+MenuItem0_4 = 0;About e-Banking;left;middle;;;-1;-1;0;normal;0;11254943;false;14674647;false;;1;-1;-1;;;-1;-1;0;;;_self;Arial;8;0;normal;normal;none;Arial;8;0;normal;normal;none;1;solid;5075021;14674647;5075021;12571056;14674647;5075021;12571056;5075021;0;1;;1;;;tiled;tiled;0;;;;;;;
+MenuItem2_2 = 0;Car Loan;left;middle;;;-1;-1;0;normal;0;13555414;false;8650752;false;;1;-1;-1;;;-1;-1;0;;loan_app.jsp?loan=1;_self;Arial;9;0;normal;normal;none;Arial;9;16777215;normal;normal;none;0;solid;13555414;13555414;13555414;13555414;13555414;13555414;13555414;13555414;0;1;;1;;;tiled;tiled;0;;;;;;;
+MenuBody1 = 1;auto;0;0;vertically;D:\project\menu\arrow_r.gif;7;7;0;3;16777215;false;;tiled;0;1;solid;0;Horizontal blinds;20;true;0;0;0;0;0;8355711;1;none;;;;;;;;;;;
+MenuItem2_3 = 0;Menu Item 1;left;middle;;;-1;-1;0;sepline;0;0;false;16777215;false;;1;-1;-1;;;-1;-1;0;;;_self;Arial;8;0;normal;normal;none;Arial;8;0;normal;normal;none;1;solid;5075021;16777215;5075021;12571056;16777215;5075021;12571056;5075021;0;1;;1;;;tiled;tiled;0;;;;;;;
+MenuBody2 = 5;auto;0;0;vertically;D:\project\menu\arrow_r.gif;7;7;0;3;16777215;false;;tiled;0;1;solid;0;Horizontal blinds;20;true;0;0;0;0;0;8355711;1;none;;;;;;;;;;;
+MenuBody3 = 1;auto;0;0;vertically;D:\project\menu\arrow_r.gif;7;7;0;3;16777215;false;;tiled;0;1;solid;0;Horizontal blinds;20;true;0;0;0;0;0;8355711;1;none;;;;;;;;;;;
+MenuItem2_4 = 0;Home Loan;left;middle;;;-1;-1;0;normal;0;13555414;false;8650752;false;;1;-1;-1;;;-1;-1;0;;loan_app.jsp?loan=2;_self;Arial;9;0;normal;normal;none;Arial;9;16777215;normal;normal;none;0;solid;13555414;13555414;13555414;13555414;13555414;13555414;13555414;13555414;0;1;;1;;;tiled;tiled;0;;;;;;;
+TopMenuBody = ivvnair;float;0;0;none;false;true;310;333;;;;;;
+MenuItem0_0 = 0;Menu Item 1;left;middle;;;-1;-1;0;sepline;0;16777215;false;16777215;true;;1;200;1;;;-1;-1;0;;;_self;Arial;8;10053120;normal;normal;none;Arial;8;0;normal;normal;none;0;none;16777215;16777215;16777215;16777215;16777215;16777215;16777215;16777215;0;1;;1;;;tiled;tiled;0;;;;;;;
+MenuItem1_0 = 0;New Account;left;middle;;;-1;-1;0;normal;0;13555414;false;8650752;false;;1;-1;-1;;;-1;-1;0;;new_user.htm;_self;Arial;9;0;normal;normal;none;Arial;9;16777215;normal;normal;none;0;solid;13555414;13555414;13555414;13555414;13555414;13555414;13555414;13555414;0;1;;1;;;tiled;tiled;0;;;;;;;
+MenuItem0_1 = 1;Banking;left;middle;;;-1;-1;0;normal;0;11254943;false;14674647;false;;1;-1;-1;;;-1;-1;0;;;_self;Arial;8;0;normal;normal;none;Arial;8;0;normal;normal;none;1;solid;5075021;14674647;5075021;12571056;14674647;5075021;12571056;5075021;0;1;;1;;;tiled;tiled;0;;;;;;;
+MenuItem2_0 = 0;Educational Loan;left;middle;;;-1;-1;0;normal;0;13555414;false;8650752;false;;1;-1;-1;;;-1;-1;0;;loan_app.jsp?loan=3;_self;Arial;9;0;normal;normal;none;Arial;9;16777215;normal;normal;none;0;solid;13555414;13555414;13555414;13555414;13555414;13555414;13555414;13555414;0;1;;1;;;tiled;tiled;0;;;;;;;
+MenuItem0_2 = 1;Loan;left;middle;;;-1;-1;0;normal;0;11254943;false;14674647;false;;1;-1;-1;;;-1;-1;0;;;_self;Arial;8;0;normal;normal;none;Arial;8;0;normal;normal;none;1;solid;5075021;14674647;5075021;12571056;14674647;5075021;12571056;5075021;0;1;;1;;;tiled;tiled;0;;;;;;;
+========== Parameter Part End ==========
+
+========== Resource Part Begin ==========
+Resource Number = 3
+stm31.js=D:\PROGRAM FILES\SOURCETEC\SOTHINK DHTMLMENU\Resource\=
+blank.gif=D:\PROGRAM FILES\SOURCETEC\SOTHINK DHTMLMENU\Resource\=
+arrow_r.gif=D:\project\menu\=
+========== Resource Part End ==========
+
+========== HTML Part Begin ==========
+Segment Number = 2
+Segment Position = script
+<script type="text/javascript" language="JavaScript1.2">
+<!--
+var st_path="";
+var st_lib="stm31.js";
+document.open();
+document.write("<"+"script type='text/javascript' language='JavaScript1.2' src='"+st_path+st_lib+"'><"+"/script>");
+document.close();
+//-->
+</script>===== Segment End =====
+Segment Position = cursor
+<script type="text/javascript" language="JavaScript1.2">
+<!--
+beginSTM("ivvnair","float","0","0","none","false","true","310","333");
+beginSTMB("auto","0","0","vertically","arrow_r.gif","7","7","0","3","#ffffff","","tiled","#ffffff","0","none","0","Normal","50","0","0","7","7","0","0","3","#83aa9b","false","#ffffff","#ffffff","#ffffff","complex");
+appendSTMI("false","Menu&nbsp;Item&nbsp;1","left","middle","","","-1","-1","0","sepline","#ffffff","transparent","blank.gif","1","200","1","","","-1","-1","0","","","_self","Arial","8pt","#006699","normal","normal","none","Arial","8pt","#000000","normal","normal","none","0","none","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","","","","tiled","tiled");
+appendSTMI("false","Banking","left","middle","","","-1","-1","0","normal","#9fbcab","#d7eadf","","1","-1","-1","blank.gif","blank.gif","-1","-1","0","","","_self","Arial","8pt","#000000","normal","normal","none","Arial","8pt","#000000","normal","normal","none","1","solid","#4d704d","#d7eadf","#4d704d","#b0d1bf","#d7eadf","#4d704d","#b0d1bf","#4d704d","","","","tiled","tiled");
+beginSTMB("auto","0","0","vertically","arrow_r.gif","0","0","0","3","#ffffff","","tiled","#000000","1","solid","0","Horizontal blinds","20","0","0","0","0","0","0","0","#7f7f7f","true","#000000","#000000","#000000","none");
+appendSTMI("false","New&nbsp;Account","left","middle","","","-1","-1","0","normal","#d6d6ce","#000084","","1","-1","-1","blank.gif","blank.gif","-1","-1","0","","new_user.htm","_self","Arial","9pt","#000000","normal","normal","none","Arial","9pt","#ffffff","normal","normal","none","0","solid","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","new_user.htm","","","tiled","tiled");
+endSTMB();
+appendSTMI("false","Loan","left","middle","","","-1","-1","0","normal","#9fbcab","#d7eadf","","1","-1","-1","blank.gif","blank.gif","-1","-1","0","","","_self","Arial","8pt","#000000","normal","normal","none","Arial","8pt","#000000","normal","normal","none","1","solid","#4d704d","#d7eadf","#4d704d","#b0d1bf","#d7eadf","#4d704d","#b0d1bf","#4d704d","","","","tiled","tiled");
+beginSTMB("auto","0","0","vertically","arrow_r.gif","0","0","0","3","#ffffff","","tiled","#000000","1","solid","0","Horizontal blinds","20","0","0","0","0","0","0","0","#7f7f7f","true","#000000","#000000","#000000","none");
+appendSTMI("false","Educational&nbsp;Loan","left","middle","","","-1","-1","0","normal","#d6d6ce","#000084","","1","-1","-1","blank.gif","blank.gif","-1","-1","0","","loan_app.jsp?loan=3","_self","Arial","9pt","#000000","normal","normal","none","Arial","9pt","#ffffff","normal","normal","none","0","solid","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","loan_app.jsp?loan=3","","","tiled","tiled");
+appendSTMI("false","Menu&nbsp;Item&nbsp;1","left","middle","","","-1","-1","0","sepline","#000000","#ffffff","blank.gif","1","-1","-1","","","-1","-1","0","","","_self","Arial","8pt","#000000","normal","normal","none","Arial","8pt","#000000","normal","normal","none","1","solid","#4d704d","#ffffff","#4d704d","#b0d1bf","#ffffff","#4d704d","#b0d1bf","#4d704d","","","","tiled","tiled");
+appendSTMI("false","Car&nbsp;Loan","left","middle","","","-1","-1","0","normal","#d6d6ce","#000084","","1","-1","-1","blank.gif","blank.gif","-1","-1","0","","loan_app.jsp?loan=1","_self","Arial","9pt","#000000","normal","normal","none","Arial","9pt","#ffffff","normal","normal","none","0","solid","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","loan_app.jsp?loan=1","","","tiled","tiled");
+appendSTMI("false","Menu&nbsp;Item&nbsp;1","left","middle","","","-1","-1","0","sepline","#000000","#ffffff","blank.gif","1","-1","-1","","","-1","-1","0","","","_self","Arial","8pt","#000000","normal","normal","none","Arial","8pt","#000000","normal","normal","none","1","solid","#4d704d","#ffffff","#4d704d","#b0d1bf","#ffffff","#4d704d","#b0d1bf","#4d704d","","","","tiled","tiled");
+appendSTMI("false","Home&nbsp;Loan","left","middle","","","-1","-1","0","normal","#d6d6ce","#000084","","1","-1","-1","blank.gif","blank.gif","-1","-1","0","","loan_app.jsp?loan=2","_self","Arial","9pt","#000000","normal","normal","none","Arial","9pt","#ffffff","normal","normal","none","0","solid","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","loan_app.jsp?loan=2","","","tiled","tiled");
+endSTMB();
+appendSTMI("false","Services","left","middle","","","-1","-1","0","normal","#9fbcab","#d7eadf","","1","-1","-1","blank.gif","blank.gif","-1","-1","0","","","_self","Arial","8pt","#000000","normal","normal","none","Arial","8pt","#000000","normal","normal","none","1","solid","#4d704d","#d7eadf","#4d704d","#b0d1bf","#d7eadf","#4d704d","#b0d1bf","#4d704d","","","","tiled","tiled");
+beginSTMB("auto","0","0","vertically","arrow_r.gif","0","0","0","3","#ffffff","","tiled","#000000","1","solid","0","Horizontal blinds","20","0","0","0","0","0","0","0","#7f7f7f","true","#000000","#000000","#000000","none");
+appendSTMI("false","Calculator","left","middle","","","-1","-1","0","normal","#d6d6ce","#000084","","1","-1","-1","blank.gif","blank.gif","-1","-1","0","","","_self","Arial","9pt","#000000","normal","normal","none","Arial","9pt","#ffffff","normal","normal","none","0","solid","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","#d6d6ce","","","","tiled","tiled");
+endSTMB();
+appendSTMI("false","About&nbsp;e-Banking","left","middle","","","-1","-1","0","normal","#9fbcab","#d7eadf","","1","-1","-1","blank.gif","blank.gif","-1","-1","0","","","_self","Arial","8pt","#000000","normal","normal","none","Arial","8pt","#000000","normal","normal","none","1","solid","#4d704d","#d7eadf","#4d704d","#b0d1bf","#d7eadf","#4d704d","#b0d1bf","#4d704d","","","","tiled","tiled");
+endSTMB();
+endSTM();
+//-->
+</script>
+===== Segment End =====
+========== HTML Part End ==========
+

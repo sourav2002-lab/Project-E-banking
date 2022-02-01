@@ -1,0 +1,91 @@
+
+<HTML><HEAD><TITLE>MAIL US! Form</TITLE>
+
+</HEAD>
+<body background="images/center.jpg" alink=lightblue vlink=blue>
+<SCRIPT language=JavaScript>
+
+function checkinput()
+  {
+   if(f1.uname.value=="")
+    {
+     alert("Please Enter Your Name!");
+     f1.uname.focus();
+    return false;
+    }
+   else
+    if((f1.uname.value).length>15)
+     {
+      alert("please enter your name in 15 characters");
+      f1.uname.value="";
+      f1.uname.focus();
+      return false;
+     }
+if(f1.mail.value!="")
+   {
+    if(((f1.mail.value).length)>35)
+    {
+     alert("mailid has 35 chars limit");
+     f1.mail.value="";
+     f1.mail.focus();
+     return false;
+    }
+  }
+if((f1.mail.value=="")||(((f1.mail.value).indexOf("@"))==-1)||(((f1.mail.value).indexOf(""))==-1))
+   {
+   alert("Please Enter Valid Mail id!");
+   f1.mail.focus();
+   return false;
+   }
+if(f1.comments.value=="")
+  {
+   alert("Comment field is empty\nPlease Enter Comments or Questions!");
+   f1.comments.focus();
+   return false;
+  }
+if(f1.lentxt.value>300)
+  {
+  alert("please check:\nyou have only 300 chars limit for comments");
+  return(false);
+  }
+  return true;
+ }
+function clearall()
+ {
+ f1.uname.value="";
+ f1.mail.value="";
+f1.comments.value="";
+ f1.uname.focus();
+ }
+document.onkeyup=countchars;
+function countchars()
+  {f1.lentxt.value=f1.comments.value.length;}
+</SCRIPT>
+<CENTER>
+<FORM name=f1 onreset="return clearall()" onsubmit="return checkinput()" 
+action=mailus.jsp>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=center align=middle><FONT color=Green size=7>MAIL US!</FONT> </TD>
+  <TR>
+    <TD align=left width=845><BR><BR>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD width="10%"></TD>
+          <TD width="80%"><FONT face=Arial color=black size=2><I><STRONG>Fill 
+            the details below to Send a Mail.</STRONG></I></FONT> 
+            <p><FONT face=VERDANA color=blue>Please enter your 
+            Name:&nbsp;&nbsp; <BR><INPUT size=30 name=uname><BR>and Your 
+            E-Mail address: <BR><INPUT size=30 name=mail><BR>Please enter 
+            any comments or questions below: <BR><FONT face=Arial color=red 
+            size=2>There is a 300 character Limit on Comments.</FONT><FONT 
+            face=arial size=-2 ALIGN="right">You've Typed</FONT> <INPUT size=3 
+            value=0 name=lentxt><BR><FONT face=arial size=-2>characters so 
+            far</FONT> <BR><TEXTAREA name=comments rows=5 cols=41 onchange=countchars()></TEXTAREA> 
+            </FONT>
+            <P><FONT face=verdana color=white><INPUT type=submit value="Send this form">&nbsp; as 
+            mail. <BR><br><INPUT type=reset value="Clear this Form">&nbsp; and 
+            start over. 
+</FONT></P></TD></TR></TR></TBODY></TABLE></FORM></TR></TBODY></TABLE></CENTER></BODY></HTML>

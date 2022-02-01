@@ -1,0 +1,583 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>New Account Creation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style>
+    #myRow1{visibility: hidden;}
+    #myRow2{visibility: hidden;}
+</style>
+
+<script language="JavaScript">
+    function doIt()
+    {
+       
+       var sel;
+       sel=document.getElementById("cmb_acc").value;
+       
+       
+      if(sel==1){
+          
+          document.getElementById("myRow1").style.visibility="visible";
+          document.getElementById("myRow2").style.visibility="visible";
+      } 
+      else if(sel=="false"){ 
+          
+          document.getElementById("myRow1").style.visibility="hidden";
+          document.getElementById("myRow2").style.visibility="hidden";
+      }
+      else{
+          
+          document.getElementById("myRow1").style.visibility="hidden";
+          document.getElementById("myRow2").style.visibility="hidden";
+      }
+    }
+    
+var no="0123456789"
+function isNumber(data, type)
+{
+	var numStr=type;
+	var thisChar;
+	var counter=0;
+	for(var i=0; i < data.length; i++)
+		{
+			thisChar=data.substring(i,i+1);
+			if(numStr.indexOf(thisChar)!=-1)
+			{counter++;}
+		}
+		if(counter==data.length)
+		{return true;}
+		else
+		return false;
+ }
+function validateForm()
+{
+	if(document.form1.cmb_acc.value=="false")
+	{
+		alert("Select a value");
+		document.form1.cmb_acc.focus();
+		return false;
+	}
+	else if (document.form1.cmb_acc.value=="1")
+	{
+			if(!validate(Trim(document.form1.txt_accno.value),no))
+			{
+				document.form1.txt_accno.focus();
+				alert("Enter the valid account number");
+				return false;
+			}
+			if(!validate(Trim(document.form1.txt_crd.value),no))
+			{
+				document.form1.txt_crd.focus();
+				alert("Enter the valid card number");
+				return false;
+			}
+			if(Trim(document.form1.txt_accno.value)=="")
+			{
+				document.form1.txt_accno.focus();
+				alert("Enter the valid account number");
+				return false;
+			}
+			if(Trim(document.form1.txt_crd.value)=="")
+			{			
+				document.form1.txt_crd.value=0;
+			}
+	}
+	else
+	{
+		document.form1.txt_accno.value=0;
+		document.form1.txt_crd.value=0;
+	}
+	
+	for(i=3;i<=6;i++)
+	{	
+		if (Trim(document.form1.elements[i].value)==="")
+		{
+			document.form1.elements[i].focus();
+			alert("Enter a value");
+			return false;
+		}
+                
+	}
+        var exp= document.getElementById("txt_fn2").value;   
+         if(/[0-9]/.test(exp)===true){
+               alert("Letters Only");
+               document.form1.txt_fn.focus();
+               return false;
+            }
+           
+            
+         var exp1= document.getElementById("txt_sn").value;   
+         if(/[0-9]/.test(exp1)===true){
+               alert("Letters Only");
+               document.form1.txt_sn.focus();
+               return false;
+            }
+            
+         
+         
+	if(document.form1.cmb_sex.value==="false")
+	{
+		alert("Select a value");
+		document.form1.cmb_sex.focus();
+		return false;
+	}
+	for(i=8;i<=12;i++)
+	{	
+		if (Trim(document.form1.elements[i].value)=="")
+		{
+			document.form1.elements[i].focus();
+			alert("Enter a value");
+			return false;
+		}
+               
+                    if(isNaN(document.form1.txt_rp.value))
+        {
+                alert("Enter the valid Mobile Number(Like : 9566137117)");
+                document.form1.txt_rp.focus();
+                return false;
+        }
+        else if (document.form1.txt_rp.value.length < 10)
+        {
+                alert(" Your Mobile Number must be at least 10 Integers");
+                document.form1.txt_rp.select();
+                return false;
+        }
+        
+         if(isNaN(document.form1.txt_op.value))
+        {
+                alert("Enter the valid Mobile Number(Like : 9566137117)");
+                document.form1.txt_op.focus();
+                return false;
+        }
+        else if (document.form1.txt_op.value.length < 10)
+        {
+                alert(" Your Mobile Number must be at least 10 Integers");
+                document.form1.txt_op.select();
+                return false;
+        }
+        
+        
+        
+	}
+
+	if(document.form1.cmb_bra.value==="false")
+	{
+		alert("Select a value");
+		document.form1.cmb_bra.focus();
+		return false;
+	}	
+	if(Trim(document.form1.txt_age.value)==="false")
+	{
+		alert("Select a value");
+		document.form1.txt_age.focus();
+		return false;
+	}	
+	if(document.form1.cmb_tst.value==="false")
+	{
+		alert("Select a value");
+		document.form1.cmb_tst.focus();
+		return false;
+	}
+	if(document.form1.cmb_tsp.value==="false")
+	{
+		alert("Select a value");
+		document.form1.cmb_tsp.focus();
+		return false;
+	}
+	if(Trim(document.form1.txt_pwd.value)==="false")
+	{
+		alert("Enter the country");
+		document.form1.txt_pwd.focus();
+		return false;
+	}
+	
+	var email=document.form1.txt_email.value;
+	var at=email.indexOf('@');
+			
+	if (at === -1 )
+	{
+		alert("Email id not a valid one");
+		document.form1.txt_email.focus();
+		return false;
+	}
+	else if (email.indexOf('@',at+1) !== -1)
+	{
+		alert("Email id not a valid one");
+		document.form1.txt_email.focus();
+		return false;		
+	}
+	at=email.indexOf('.',at+1);
+	if (at === -1 )
+	{
+		alert("Email id not a valid one");
+		document.form1.txt_email.focus();
+		return false;
+	}
+	
+	var le=email.length;
+	
+	if (email.charAt(le-1)==='.')
+	{
+		alert("Email id not a valid one");
+		document.form1.txt_email.focus();
+		return false;	
+	}
+	
+	if(!validate(Trim(document.form1.txt_rp.value),no))
+	{
+		document.form1.txt_rp.focus();
+		alert("Enter the valid phone number");
+		return false;
+	}
+        
+	
+	if(!validate(Trim(document.form1.txt_op.value),no))
+	{
+		document.form1.txt_op.focus();
+		alert("Enter the valid phone number");
+		return false;
+	}	
+	if(!validate(Trim(document.form1.txt_age.value),no))
+	{
+		document.form1.txt_age.focus();
+		alert("Enter the valid age");
+		return false;
+	}
+           
+        
+
+
+	
+	document.form1.txt_sq.value=Trim(document.form1.txt_sq.value);
+	document.form1.txt_sa.value=Trim(document.form1.txt_sa.value);
+	document.form1.txt_fn.value=Trim(document.form1.txt_fn.value);
+	document.form1.txt_sn.value=Trim(document.form1.txt_sn.value);
+	document.form1.txt_email.value=Trim(document.form1.txt_email.value);
+	document.form1.txt_hname.value=Trim(document.form1.txt_hname.value);
+	document.form1.txt_rp.value=Trim(document.form1.txt_rp.value);
+	document.form1.txt_op.value=Trim(document.form1.txt_op.value);
+	document.form1.txt_city.value=Trim(document.form1.txt_city.value);
+	document.form1.txt_age.value=Trim(document.form1.txt_age.value);
+	document.form1.txt_pwd.value=Trim(document.form1.txt_pwd.value);
+	document.form1.txt_accno.value=Trim(document.form1.txt_accno.value);
+	document.form1.txt_crd.value=Trim(document.form1.txt_crd.value);
+
+	return true;
+}
+function sta()
+{
+	document.form1.cmb_acc.focus()
+}
+</script>
+
+<script language="JavaScript" src="eBankscripts/usefun.js"></script>
+
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="sta()">
+<form name="form1" method="post" action="new_ant.jsp" onSubmit="return validateForm()">
+  <table width="779" border="0" cellpadding="0" cellspacing="0" bgcolor="#D7EADF">
+    <!--DWLayoutTable-->
+    <tr> 
+      <td width="77" height="19">&nbsp;</td>
+      <td width="60">&nbsp;</td>
+      <td width="181">&nbsp;</td>
+      <td width="149">&nbsp;</td>
+      <td width="170">&nbsp;</td>
+      <td width="43">&nbsp;</td>
+      <td width="99">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td height="30"></td>
+      <td></td>
+      <td colspan="3" valign="top"><img src="images/tit_apy_new_user.gif" width="500" height="30"></td>
+      <td>&nbsp;</td>
+      <td></td>
+    </tr>
+    <tr> 
+      <td height="10"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr> 
+      <td height="19"></td>
+      <td colspan="2" valign="top"><a onClick="window.open('ter&con.htm','','width=549,height=456')" 
+	   href="new_user.htm"> 
+        <u>
+          <font color="#0000CC">Terms and Conditions</font> 
+        </u>
+        </a></td>
+      <td>&nbsp;</td>
+      <td colspan="2" valign="top"><div align="right"><font color="#CC3300">* 
+          indicates mandatory fields</font></div></td>
+      <td></td>
+    </tr>
+    <tr> 
+      <td height="4"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr> 
+      <td height="866"></td>
+      <td colspan="5" valign="top"> <table width="100%" height="836" border="1" cellpadding="0" cellspacing="0" bgcolor="#ded7bd">
+          <!--DWLayoutTable-->
+          <tr> 
+            <td height="21" colspan="4" valign="top" bgcolor="#efefe0"> <font color="#CC3300" face="Times New Roman, Times, serif">&nbsp;</font></td>
+          </tr>
+          <tr> 
+            <td height="27" colspan="2" valign="top" bgcolor="#ded7bd"> <div align="right"><font color="#CC3300" face="Times New Roman, Times, serif"><strong>Are 
+                you an account holder ?*</strong></font></div></td>
+            <td colspan="2" valign="top" bgcolor="#ded7bd"> <div align="left"> 
+                    <select name="cmb_acc" size="1" id="cmb_acc" onchange="doIt()" >
+                  <option value="false" selected>--Select Please--</option>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div></td>
+          </tr>
+          <tr bgcolor="#efefe0"> 
+            <td height="8" colspan="4" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          </tr>
+          <tr id="myRow1"> 
+            <td height="27" colspan="2" valign="top" bgcolor="#ded7bd"> <div align="center"><font color="#CC3300"></font></div>
+              <div align="right"><strong><font color="#CC3300">Credit Card Number</font></strong>              </div></td>
+            <td height="27" colspan="2" valign="top" bgcolor="#ded7bd"> <div align="center"><strong></strong></div>
+              <div align="left"> 
+                <input name="txt_crd" type="text" id="txt_crd" maxlength="20"  >
+              </div></td>
+          </tr>
+          <tr> 
+            <td height="5" colspan="4" valign="top" bgcolor="#efefe0"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          </tr>
+          <tr id="myRow2"> 
+            <td height="27" colspan="2" valign="top" bgcolor="#ded7bd"> <div align="right"><font color="#CC3300"><strong>Account 
+                Number</strong></font></div></td>
+            <td colspan="2" valign="top" bgcolor="#ded7bd"> <input name="txt_accno" type="text" id="txt_accno"  >            </td>
+          </tr>
+          <tr>
+            <td height="5" colspan="4" valign="top" bgcolor="#efefe0"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="27" colspan="2" valign="top" bgcolor="#ded7bd"><div align="center"><font color="#CC3300"></font></div>
+                <div align="right"><strong><font color="#CC3300">User ID </font></strong> </div></td>
+            <td height="27" colspan="2" valign="top" bgcolor="#ded7bd"><div align="center"><strong></strong></div>
+                <div align="left">
+                  <input name="userid" type="text" id="userid" maxlength="15"   >
+              </div></td>
+          </tr>
+          <tr>
+            <td height="5" colspan="4" valign="top" bgcolor="#efefe0"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="27" colspan="2" valign="top" bgcolor="#ded7bd"><div align="right"><strong><font color="#CC3300">Password</font></strong></div></td>
+            <td colspan="2" valign="top" bgcolor="#ded7bd"><input name="password" type="password" id="password"  maxlength="10"  >            </td>
+          </tr>
+          <tr> 
+            <td height="11" colspan="4" valign="top" bgcolor="#efefe0"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          </tr>
+          <tr> 
+            <td height="27" colspan="2" valign="top" bgcolor="#ded7bd"> <div align="right"><strong><font color="#CC3300">Secret 
+                Question*</font></strong></div></td>
+            <td colspan="2" valign="top" bgcolor="#ded7bd"> <input name="txt_sq" type="text" id="txt_sq" size="45" maxlength="200"></td>
+          </tr>
+          <tr> 
+            <td height="21" colspan="4" valign="top" bgcolor="#efefe0"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          </tr>
+          <tr> 
+            <td height="27" colspan="2" valign="top" bgcolor="#ded7bd"> <div align="right"><strong><font color="#CC3300">Answer*</font></strong></div></td>
+            <td colspan="2" valign="top" bgcolor="#ded7bd"> <input name="txt_sa" type="text" id="txt_sa" size="45" maxlength="100"></td>
+          </tr>
+          <tr> 
+            <td height="10" colspan="4" valign="top" bgcolor="#efefe0"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          </tr>
+          <tr> 
+            <td height="27" colspan="2" valign="top" bgcolor="#ded7bd"><div align="right"><strong><font color="#CC3300">First 
+                Name*</font></strong></div></td>
+            <td colspan="2" valign="top" bgcolor="#ded7bd"> <input name="txt_fn" type="text" id="txt_fn2"  maxlength="30"></td>
+          </tr>
+          <tr> 
+            <td height="21" colspan="4" valign="top" bgcolor="#efefe0"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          </tr>
+          <tr> 
+            <td height="27" colspan="2" valign="top" bgcolor="#ded7bd"> <div align="center"><strong></strong></div>
+              <div align="right"><font color="#CC3300"><strong>Last Name*</strong></font>              </div></td>
+            <td colspan="2" valign="top" bgcolor="#ded7bd"> <div align="center"><font color="#CC3300"></font></div>
+              <div align="left"> 
+                <input name="txt_sn" type="text" id="txt_sn"  maxlength="30">
+              </div></td>
+          </tr>
+          <tr> 
+            <td height="10" colspan="4" valign="top" bgcolor="#efefe0"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          </tr>
+          <tr> 
+            <td height="27" colspan="2" valign="top" bgcolor="#ded7bd"><div align="right"><strong><font color="#CC3300">Sex*</font></strong></div></td>
+            <td colspan="2" valign="top" bgcolor="#ded7bd"> <select name="cmb_sex" size="1" id="select2">
+                <option value="false" selected>--Select Please--</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select></td>
+          </tr>
+          <tr> 
+            <td height="21" colspan="4" valign="top" bgcolor="#efefe0"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          </tr>
+          <tr> 
+            <td height="27" colspan="2" valign="top" bgcolor="#ded7bd"> <div align="center"><strong></strong></div>
+              <div align="right"><strong><font color="#CC3300">Email*</font></strong>              </div></td>
+            <td colspan="2" valign="top" bgcolor="#ded7bd"> <div align="center"><strong></strong></div>
+              <div align="left"> 
+                <input name="txt_email" type="text" id="txt_email" maxlength="50">
+              </div></td>
+          </tr>
+          <tr> 
+            <td height="10" colspan="4" valign="top" bgcolor="#efefe0"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          </tr>
+          <tr> 
+            <td height="27" colspan="2" valign="top" bgcolor="#ded7bd"> <div align="right"><strong><font color="#CC3300">Residence 
+                Phone*</font></strong></div></td>
+            <td colspan="2" valign="top" bgcolor="#ded7bd"> <input name="txt_rp" type="text" id="txt_rp" maxlength="15"></td>
+          </tr>
+          <tr> 
+            <td height="21" colspan="4" valign="top" bgcolor="#efefe0"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          </tr>
+          <tr> 
+            <td height="27" colspan="2" valign="top" bgcolor="#ded7bd"> <div align="center"></div>
+              <div align="center"></div>
+              <div align="right"><strong><font color="#CC3300">Office Phone*</font></strong>              </div></td>
+            <td colspan="2" valign="top" bgcolor="#ded7bd"> <div align="left"><strong></strong></div>
+              <div align="left"> 
+                <input name="txt_op" type="text" id="txt_op" maxlength="15">
+              </div></td>
+          </tr>
+          <tr> 
+            <td height="10" colspan="4" valign="top" bgcolor="#efefe0"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          </tr>
+          <tr> 
+            <td height="27" colspan="2" valign="top" bgcolor="#ded7bd"><div align="right"><strong><font color="#CC3300">Address</font></strong></div></td>
+            <td colspan="2" valign="top" bgcolor="#ded7bd"> <input name="txt_hname" type="text" id="txt_hname" maxlength="500"></td>
+          </tr>
+          <tr> 
+            <td height="21" colspan="4" valign="top" bgcolor="#efefe0"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          </tr>
+          <tr> 
+            <td height="27" colspan="2" valign="top" bgcolor="#ded7bd"> <div align="center"><strong></strong></div>
+              <div align="right"><strong><font color="#CC3300">City</font></strong>              </div></td>
+            <td colspan="2" valign="top" bgcolor="#ded7bd"> <div align="left"><strong></strong></div>
+              <div align="left"> 
+                <input name="txt_city" type="text" id="txt_city" maxlength="30">
+              </div></td>
+          </tr>
+          <tr> 
+            <td height="10" colspan="4" valign="top" bgcolor="#efefe0"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          </tr>
+          <tr> 
+            <td height="27" colspan="2" valign="top"><div align="right"><font color="#CC3300"><strong>Bank 
+                Branch*</strong></font></div></td>
+            <td colspan="2" valign="top"><select name="cmb_bra" id="select3">
+                <option value="false" selected>--Select Please--</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="New Delhi">New Delhi</option>
+                <option value="Pune">Pune</option>
+                <option value="Trivandrum">Trivandrum</option>
+                <option value="Visakhapatnam">Visakhapatnam</option>
+              </select></td>
+          </tr>
+          <tr> 
+            <td height="21" colspan="4" valign="top" bgcolor="#efefe0"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          </tr>
+          <tr> 
+            <td height="27" colspan="2" valign="top"> <div align="center"><font color="#CC3300"></font></div>
+              <div align="right"><font color="#CC3300"><strong>Age</strong></font>              </div></td>
+            <td colspan="2" valign="top"> <div align="left"><font color="#CC3300"></font></div>
+              <div align="left"> 
+                <input name="txt_age" type="text" id="txt_age" maxlength="3">
+              </div></td>
+          </tr>
+          <tr> 
+            <td height="21" colspan="4" valign="top" bgcolor="#efefe0"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          </tr>
+          <tr> 
+            <td height="27" colspan="2" valign="top"><div align="right"><font color="#CC3300"><strong>Convenient 
+                time to contact you between*</strong></font></div></td>
+            <td colspan="2" valign="top"> <div align="left"> 
+                <select name="cmb_tst" size="1" class="inputbox" id="select">
+                  <option value="false" selected>--Select Please--</option>
+                  <option value="9 AM">9 AM</option>
+                  <option value="10 AM">10 AM</option>
+                  <option value="11 AM">11 AM</option>
+                  <option value="12 PM">12 PM</option>
+                  <option value="1 PM">1 PM</option>
+                  <option value="2 PM">2 PM</option>
+                  <option value="3 PM">3 PM</option>
+                  <option value="4 PM">4 PM</option>
+                  <option value="5 PM">5 PM</option>
+                  <option value="6 PM">6 PM</option>
+                  <option value="7 PM">7 PM</option>
+                </select>
+                <strong><font color="#CC3300">and</font></strong> 
+                <select name="cmb_tsp" size="1" class="inputbox" id="cmb_tsp">
+                  <option value="false" selected>--Select Please--</option>
+                  <option value="10 AM">10 AM</option>
+                  <option value="11 AM">11 AM</option>
+                  <option value="12 PM">12 PM</option>
+                  <option value="1 PM">1 PM</option>
+                  <option value="2 PM">2 PM</option>
+                  <option value="3 PM">3 PM</option>
+                  <option value="4 PM">4 PM</option>
+                  <option value="5 PM">5 PM</option>
+                  <option value="6 PM">6 PM</option>
+                  <option value="7 PM">7 PM</option>
+                </select>
+              </div></td>
+          </tr>
+          <tr> 
+            <td height="21" colspan="4" valign="top" bgcolor="#efefe0"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          </tr>
+          <tr> 
+            <td height="27" colspan="2" valign="top"><div align="right"><strong><font color="#CC3300">State</font></strong></div></td>
+            <td colspan="2" valign="top"> <input name="txt_pwd" type="text" id="txt_pwd" maxlength="30"></td>
+          </tr>
+          <tr> 
+            <td height="21" colspan="4" valign="top" bgcolor="#efefe0"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          </tr>
+          <tr> 
+            <td width="167" height="27" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+            <td width="123" height="27" valign="top"><div align="center"> 
+                <input type=submit name="Submit" value="Submit" >
+              </div></td>
+            <td width="142" height="27" valign="top"><div align="center"> 
+                <input type="reset" name="Reset" value="Reset">
+              </div></td>
+            <td width="161" height="27" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          </tr>
+        </table></td>
+      <td bgcolor="#D7EADF">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td height="34"></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
